@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    object-fit:contain;
+    background-image: url(/image/todo\ background.png);
+    background-size:auto ; 
+     
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 90px;   
+}
+
+.list {
+    background-color: #ffffff8e;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(10, 10, 10, 0.5);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a1919;
+}
+
+form {
+    display: flex;
+}
+
+.input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px ;
+    font-size: 20px;
+    border: none;
+    background-color: rgba(228, 231, 233, 0.829);
+}
+
+input:hover{
+    border: none;
+}
+
+.add {
+    padding: 10px 20px;
+    border: none;
+    background-image: linear-gradient(180deg, coral, rgb(57, 9, 70), rgb(45, 32, 68));
+    color: #fff;
+    border-radius: 20px;
+    margin-left: -100px;
+    font-size: 20px;
+    cursor: pointer;
+    min-width: 100px;
+    border: 2px solid #ff9100 ;
+    transition: 0.3s;
+}
+.add:hover{
+   transform: scale(1.05,1.05);
+}
+
+ul {
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid #a79f9f;
+    position: relative;
+    font-size: 20px;
+    color: #000000;
+    
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li:hover {
+    background-image: linear-gradient(180deg,rgb(223, 221, 221), rgb(60, 142, 189) );
+    border-radius: 20px;
+}
+
+.delete {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    color: #131212;
+    font-size: 25px;
+    cursor: pointer; 
+}
+
+li:hover .delete {
+    display: block;
+    color: rgb(194, 18, 18);
+}
+
+.completed {
+    text-decoration: line-through;
+    background-image: linear-gradient(180deg, white, rgb(119, 114, 114));
+    border-radius: 20px;
+}
+.completed:hover{
+    /*background-image: linear-gradient(180deg, white, rgb(119, 114, 114));*/
+    border-radius: 20px;
+}
