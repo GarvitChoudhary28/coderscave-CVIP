@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-position: center;
     object-fit:contain;
-    background-image: url(/image/todo\ background.png);
+    background-image: url(/todo\background.png);
     background-size:auto ; 
      
 }
